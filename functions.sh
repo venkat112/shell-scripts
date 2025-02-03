@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0"
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log   
+LOGFILE="/tmp/$0-$TIMESTAMP.log"   
 echo -e "Executing of $0  $R is started $N at $TIMESTAMP"
 VALIDATE(){
 if [ $1 -ne 0 ]
