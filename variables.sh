@@ -1,7 +1,7 @@
 #!/bin/bash
 
-PERSON1=ramesh
-PERSON2=mahesh
+PERSON1=$1
+PERSON2=$2
 DATE=$(date)
 
 echo "hi my name is $PERSON1"
