@@ -25,10 +25,10 @@ fi
 
 yum install net-tools -y
 
-VALIDATE $? "installing net-tools"
+VALIDATE $? "net-tools"
 
 yum install git -y
 
-VALIDATE $? "installing git"
+VALIDATE $? "git"
      
 
