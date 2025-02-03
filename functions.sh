@@ -29,11 +29,11 @@ else
    echo -e "$G you are a root user $N"
 fi
 
-yum install net-tools -y &>>$LOGFILE
+yum install net-tools -y &>> $LOGFILE
 
 VALIDATE $? "net-tools"
 
-yum install git -y &>>$LOGFILE
+yum install git -y &>> $LOGFILE
 
 VALIDATE $? "git"
      
