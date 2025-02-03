@@ -4,10 +4,10 @@ ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-N="\e[0"
+N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"   
-echo -e "Executing of $0  $R is started $N at $TIMESTAMP"
+echo -e "Executing of $0  $G is started $N at $TIMESTAMP"
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
