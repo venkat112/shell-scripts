@@ -14,7 +14,7 @@ yum install mysql -y
 
 EXITCODE=$($?)
 
-if [ EXITCODE -ne 0 ]
+if [ $EXITCODE -ne 0 ]
 then
    echo "error: mysql is not installed"
    exit 1 
