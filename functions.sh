@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ID=$(id -u)
-
+echo "name of this script is $0 "
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
