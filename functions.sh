@@ -35,6 +35,6 @@ VALIDATE $? "net-tools"
 
 yum install git -y &>> $LOGFILE
 
-VALIDATE $? "git"
+VALIDATE $? git
      
 
