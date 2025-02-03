@@ -10,7 +10,7 @@ else
  echo "you are a root user"
 fi
 
-yum install wget -y
+yum install wgett -y
 
 
 
