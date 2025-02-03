@@ -1,9 +1,5 @@
 #!/bin/bash
+ echo "please enter username"
+ read USERNAME
 
-USERNAME=$1
-PASSWORD=$2
-DATE=$(date)
-
-echo "username is  $USERNAME"
-echo "password  is $PASSWORD"
-echo  "today date is ${DATE}" 
+ echo "entered username is $USERNAME"
