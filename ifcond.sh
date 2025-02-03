@@ -3,8 +3,8 @@
 ID=$(id -u)
 
 if [ ID -ne 0]
-echo " ERROR: please run with root user"
 then
+echo " ERROR: please run with root user"
 echo "you are a root user"
 else
 fi
