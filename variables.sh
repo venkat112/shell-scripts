@@ -6,4 +6,4 @@ DATE=$(date)
 
 echo "hi my name is $PERSON1"
 echo "hello my name is $PERSON2"
-echo  "today date is ${date}" 
+echo  "today date is ${DATE}" 
