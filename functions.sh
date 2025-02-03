@@ -1,7 +1,13 @@
 #!/bin/bash
 
 ID=$(id -u)
-echo "name of this script is $0 "
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0"
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/log.txt    
+echo -e "Executing of $0  $R is started $N at $TIMESTAMP"
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
@@ -16,18 +22,18 @@ fi
 
 if [ $ID -ne 0 ]
 then
-   echo "you are not a root user"
+   echo -e "$R you are not a root user $N"
    exit 1
 
 else
-   echo " you are a root user"
+   echo -e "$G you are a root user $N"
 fi
 
-yum install net-tools -y
+yum install net-tools -y &>>$LOGFILE.$TIMESTAMP
 
 VALIDATE $? "net-tools"
 
-yum install git -y
+yum install git -y &>>$LOGFILE.$TIMESTAMP
 
 VALIDATE $? "git"
      
