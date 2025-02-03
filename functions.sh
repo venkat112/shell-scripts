@@ -11,10 +11,10 @@ echo -e "Executing of $0  $G is started $N at $TIMESTAMP"
 VALIDATE(){
 if [ $1 -ne 0 ]
 then
-  echo "installation of $2 failed"
+  echo -e "$R installation of $2 failed $N"
   exit 1
 else
-  echo "installation of $2 success"
+  echo -e "$G installation of $2 success $N"
 fi  
      
 
