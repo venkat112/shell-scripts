@@ -1,9 +1,9 @@
 #!/bin/bash
 
-PERSON1=$1
-PERSON2=$2
+USERNAME=$1
+PASSWORD=$2
 DATE=$(date)
 
-echo "hi my name is $PERSON1"
-echo "hello my name is $PERSON2"
+echo "username is  $USERNAME"
+echo "password  is $PASSWORD"
 echo  "today date is ${DATE}" 
